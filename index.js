@@ -1,6 +1,6 @@
 const inquirer = require("inquirer")
 const Manager = require("./lib/Manager")
-const generateTeam = require("./src/generator")
+const generateTeam = require("./generator")
 const fs = require('fs');
 
 const managerQuestions = [
