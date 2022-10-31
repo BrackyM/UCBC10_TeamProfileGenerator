@@ -22,6 +22,7 @@
   "homepage": "https://github.com/BrackyM/UCBC10_TeamProfileGenerator#readme",
   "dependencies": {
     "inquirer": "^8.2.4",
-    "jest": "^29.1.2"
+    "jest": "^29.1.2",
+    "requirer": "^0.0.4"
   }
 }
