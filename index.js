@@ -183,7 +183,7 @@ function addTeamMember() {
         choices: ["yes", "no"]
     }])
     .then(function(answer) {
-        if(answer.addTeamMember === "yes"){addRoles()}
+        if(answer.addTeamMember === "yes"){addRole()}
         else {
             writeToFile(generateTeam(team))
         }
@@ -206,10 +206,11 @@ function addRole() {
     });
 }
 
-function createManager() {
+function newManagerEntry () {
     inquirer.prompt(managerQuestions)
     .then(function(answer){
-        const manager = new Manager(answer.managerName, answer., answer.managerEmail, answer.managerOfficeNumber)
+        console.log(answer);
+        const manager = new Manager(answer.managerName, answer.id , answer.email, answer.officeNumber)
         team.push(manager)
         addTeamMember()
     });
@@ -218,17 +219,17 @@ function createManager() {
 function newEngineerEntry() {
     inquirer.prompt(engineerQuestions)
     .then(function(answer){
-        const engineer = new Engineer(answer.)
+        const engineer = new Engineer(answer.engineerName, answer.id, answer.email, answer.github)
         team.push(engineer)
         addTeamMember()
     });
 }
 
 function newInternEntry() {
-    inquirer.prompt(managerQuestions)
+    inquirer.prompt(internQuestions)
     .then(function(answer){
-        const manager = new Manager(answer., answer.managerId, answer.managerEmail, answer.managerOfficeNumber)
-        team.push(manager)
+        const intern = new Intern(answer.internName, answer.id, answer.email, answer.school)
+        team.push(intern)
         addTeamMember()
     });
   
@@ -249,4 +250,4 @@ const writeToFile = fileContent => {
 };
 
 // Function call to initialize app
-createTeam();
+newManagerEntry();
