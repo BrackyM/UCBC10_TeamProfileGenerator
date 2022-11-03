@@ -1,4 +1,4 @@
-# Braxton M | UCBC11_NoteTaker | README
+# Braxton M | UCBC10_TeamProfileGenerator | README
 
 The objective of the Team Profile Generator Node.js command-line application to allow a manager to create a on the site cards that are generated based upon adding team members within the command line.
 The manager is able to add engineers and interns with their respective questions. Engineers are asked for their github username and interns are asked for their school they have attended 
