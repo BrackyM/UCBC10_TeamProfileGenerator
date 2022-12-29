@@ -13,7 +13,7 @@ let team = [];
 const managerQuestions = [
   {
     type: "input",
-    message: "What is your name?",
+    message: "Welcome new manager! What is your name?",
     name: "managerName",
     validate: (titleInput) => {
       if (titleInput) {
@@ -26,7 +26,7 @@ const managerQuestions = [
   },
   {
     type: "input",
-    message: "What is your id?",
+    message: "What is your manager id?",
     name: "id",
     validate: (titleInput) => {
       if (titleInput) {
@@ -39,7 +39,7 @@ const managerQuestions = [
   },
   {
     type: "input",
-    message: "What is your email",
+    message: "What is your management email",
     name: "email",
     validate: (titleInput) => {
       if (titleInput) {
